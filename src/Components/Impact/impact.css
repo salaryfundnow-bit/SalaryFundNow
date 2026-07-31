@@ -1,0 +1,125 @@
+.impact {
+  background: linear-gradient(135deg, #fff 0%, #fff 100%);
+  padding: 6rem 2rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.impact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.impact-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #ff6600, #ff9966);
+  display: block;
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.impact-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* allow wrapping for tablet/mobile */
+}
+
+.impact-card {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  min-width: 180px;
+  flex: 1 1 180px; /* flexible card sizing */
+  max-width: 220px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.impact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.impact-icon {
+  font-size: 2.5rem;
+  color: #ff6600;
+  margin-bottom: 1rem;
+}
+
+.impact-card h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ff6600;
+  margin-bottom: 0.5rem;
+}
+
+.impact-card p {
+  font-size: 1.05rem;
+  color: #555;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .impact {
+    padding: 5rem 2rem;
+  }
+
+  .impact-title {
+    font-size: 2.2rem;
+  }
+
+  .impact-card {
+    min-width: 160px;
+    max-width: 200px;
+    padding: 1.8rem 1rem;
+  }
+
+  .impact-card h3 {
+    font-size: 2rem;
+  }
+
+  .impact-card p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .impact {
+    padding: 4rem 1rem;
+  }
+
+  .impact-title {
+    font-size: 2rem;
+  }
+
+  .impact-stats {
+    gap: 1rem;
+    overflow-x: auto; /* scroll horizontally on small screens */
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .impact-card {
+    min-width: 140px;
+    max-width: 160px;
+    padding: 1.5rem 1rem;
+  }
+
+  .impact-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .impact-card p {
+    font-size: 0.95rem;
+  }
+}

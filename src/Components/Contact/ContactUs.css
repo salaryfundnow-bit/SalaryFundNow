@@ -1,0 +1,123 @@
+.contact-section {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.containerr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contact-content {
+  flex: 1 1 500px;
+  padding: 20px;
+  color: #333;
+
+  /* Slide-in animation from left */
+  opacity: 0;
+  transform: translateX(-200px);
+  animation: slideInLeft 1s forwards;
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  color: #f36b21;
+  margin-bottom: 10px;
+}
+
+.contact-content .subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.contact-content .description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact-content .contact-info h3 {
+  margin: 10px 0 5px 0;
+  color: #f36b21;
+}
+
+.contact-content .contact-info p {
+  margin: 0 0 10px 0;
+}
+
+.contact-image {
+  flex: 1 1 500px;
+  padding: 20px;
+
+  /* Slide-in animation from right */
+  opacity: 0;
+  transform: translateX(200px);
+  animation: slideInRight 1s forwards;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive: stack vertically on mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-content,
+  .contact-image {
+    flex: 1 1 100%;
+    padding: 10px;
+
+    /* Slide a smaller distance on mobile */
+    transform: translateX(0); /* start slightly offscreen is optional */
+    animation: slideInSmall 1s forwards;
+  }
+
+  .contact-content h2 {
+    font-size: 2rem;
+  }
+
+  .contact-content .subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-content .description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small slide for mobile */
+@keyframes slideInSmall {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,29 @@
+.product-main-container {
+  padding-top: 100px; /* adjust based on navbar height */
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+
+.product-header {
+  margin: 19vh auto;
+  
+  text-align: center;
+  margin-bottom: 10px;
+   
+}
+
+.product-header h1 {
+  font-size: 2rem;
+  color: #030303;
+}
+
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}

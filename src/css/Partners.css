@@ -1,0 +1,15 @@
+.partners-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.partners-list li img {
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
+}

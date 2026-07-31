@@ -1,0 +1,108 @@
+/* ===== Section Styling ===== */
+.why-section {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.why-header {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.why-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsl(27, 96%, 49%);
+  margin-bottom: 15px;
+}
+
+.why-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== Layout Rows ===== */
+.why-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Top row has 3 columns */
+.top-row {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+}
+
+/* Bottom row has 2 columns */
+.bottom-row {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* ===== Card Styling ===== */
+.why-card {
+  flex: 1;
+  min-width: 220px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+/* ===== Icon Styling ===== */
+.why-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: #ffeaea;
+  color: hsl(27, 96%, 49%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.why-card:hover .why-icon {
+  background: #075ccf;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* ===== Card Title ===== */
+.why-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .why-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .top-row,
+  .bottom-row {
+    max-width: 100%;
+  }
+}

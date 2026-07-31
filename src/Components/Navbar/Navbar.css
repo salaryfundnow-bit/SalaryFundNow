@@ -1,0 +1,150 @@
+/* --- BASE NAVBAR STYLES --- */
+nav {
+    width: 100%;
+    background: #ffffff;
+    color: #070707;
+    font-weight: bold;
+    padding: 8px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 110px;
+    margin-left: 50px;
+}
+
+/* Desktop Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    position: relative;
+    margin: 5px 20px;
+    font-size: 16px;
+}
+
+.nav-menu a,
+.dropbtn {
+    text-decoration: none;
+    color: #070707;
+    padding: 8px 12px;
+    display: block;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-menu a:hover,
+.dropbtn:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    z-index: 999;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: #070707;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button */
+.btn {
+    background-color: #ff5b2e;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* --- MOBILE STYLES --- */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 10px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-toggle { 
+        display: block;
+        color: #070707;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 10px auto;
+    }
+}

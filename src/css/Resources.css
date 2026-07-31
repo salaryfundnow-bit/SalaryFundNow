@@ -1,0 +1,105 @@
+/* Sidebar Menu Container */
+.resource-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Right Content */
+.resource-content {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.placeholder {
+  color: #888;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.mcd-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Menu Item */
+.mcd-menu li {
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+}
+
+/* Menu Link */
+.mcd-menu li a {
+  display: block;
+  padding: 12px 18px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.mcd-menu li:hover > a {
+  background-color: #f5f7fa;
+  color: #0d6efd;
+}
+
+/* Active Item */
+.mcd-menu li a.active {
+  background-color: #0d6efd;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Submenu Item */
+.mcd-menu .submenu {
+  background-color: #fafafa;
+}
+
+/* Submenu Link */
+.mcd-menu .submenu a {
+  padding-left: 35px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Submenu Hover */
+.mcd-menu .submenu:hover > a {
+  background-color: #eef3ff;
+  color: #0d6efd;
+}
+
+/* Remove border for last item */
+.mcd-menu li:last-child {
+  border-bottom: none;
+}
+
+/* Smooth submenu animation */
+.mcd-menu .submenu {
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mcd-menu {
+    width: 100%;
+  }
+}

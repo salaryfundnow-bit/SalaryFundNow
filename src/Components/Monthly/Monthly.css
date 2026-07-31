@@ -1,0 +1,149 @@
+/* Header Image */
+.header-image-container {
+    margin-top: 8%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+ 
+}
+
+.header-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Container for the product page */
+.product-main-container {
+  max-width: 900px;
+  padding-top: 100px; /* adjust based on navbar height */
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding-top: 100px; 
+  margin: 30px auto;
+  min-height: 200vh;
+  padding: 25px 30px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Headings */
+.product-main-container h1 {
+  color: #003366;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.product-main-container h2 {
+  color: #0055a5;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.product-main-container p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Tables */
+.product-main-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+
+
+.product-main-container th, 
+.product-main-container td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.product-main-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Lists */
+.product-main-container ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.product-main-container ul li {
+  margin-bottom: 8px;
+}
+
+/* Loan Apply Form */
+.loan-apply-form {
+  background-color: #f7f7f7;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+.loan-apply-form div {
+  margin-bottom: 15px;
+}
+
+.loan-apply-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #003366;
+}
+
+.loan-apply-form input[type="text"],
+.loan-apply-form input[type="email"],
+.loan-apply-form input[type="tel"],
+.loan-apply-form input[type="number"],
+.loan-apply-form input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.loan-apply-form button {
+  background-color: #0055a5;
+  color: #fff;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loan-apply-form button:hover {
+  background-color: #003366;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-main-container {
+    padding: 20px;
+  }
+
+  .product-main-container h1 {
+    font-size: 24px;
+  }
+
+  .product-main-container h2 {
+    font-size: 20px;
+  }
+}

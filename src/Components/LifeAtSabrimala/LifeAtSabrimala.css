@@ -1,0 +1,137 @@
+.life-section {
+  font-family: Arial, sans-serif;
+  background-color: #e7e9f9;
+  color: #333;
+  padding: 50px 20px;
+}
+
+/* Header */
+.life-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.life-header h2 {
+  color: #f16d01;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.life-header p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.life-description {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Priority Section */
+.life-priority {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.priority-text h3 {
+  color: #f16d01;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.priority-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.priority-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.priority-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Work Life Balance Section */
+.life-balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.balance-image, .balance-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.balance-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.balance-text h3 {
+  color: #f16d01;;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.balance-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Growth Section */
+.Growth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+.priority-text {
+  flex: 1;
+  padding: 20px;
+}
+.Growth-text {
+  flex: 1;
+  padding: 20px;
+}
+.Growth-text h3 {
+  color: #f16d01;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.Growth-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.Growth-image {
+  flex: 1;
+  padding: 20px;
+}
+.Growth-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* growth  */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .life-priority, .life-balance {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .priority-text, .priority-image, .balance-text, .balance-image {
+    padding: 10px;
+  }
+}

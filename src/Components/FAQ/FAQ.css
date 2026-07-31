@@ -1,0 +1,199 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.faq-section{
+padding:90px 8%;
+background:#fff;
+}
+
+.container{
+max-width:1300px;
+margin:auto;
+}
+
+.faq-small-title{
+display:inline-block;
+font-size:15px;
+font-weight:700;
+color:#ff5b2e;
+text-transform:uppercase;
+margin-bottom:15px;
+}
+
+.faq-title{
+font-size:48px;
+font-weight:700;
+color:#17325C;
+margin-bottom:15px;
+}
+
+.faq-subtitle{
+font-size:18px;
+color:#666;
+margin-bottom:50px;
+line-height:1.7;
+max-width:750px;
+}
+
+.faq-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.faq-card{
+background:#fff;
+border-radius:12px;
+box-shadow:0 8px 30px rgba(0,0,0,.07);
+transition:.3s;
+overflow:hidden;
+}
+
+.faq-card.active{
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.faq-question{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:22px 25px;
+cursor:pointer;
+}
+
+.faq-question h4{
+font-size:18px;
+font-weight:600;
+color:#222;
+padding-right:15px;
+line-height:1.5;
+}
+
+.faq-question span{
+width:36px;
+height:36px;
+border-radius:50%;
+background:#f3f5fa;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#ff5b2e;
+flex-shrink:0;
+}
+
+.faq-answer{
+max-height:0;
+overflow:hidden;
+transition:.4s ease;
+}
+
+.faq-answer.show{
+max-height:250px;
+}
+
+.faq-answer p{
+padding:0 25px 25px;
+color:#666;
+font-size:16px;
+line-height:1.8;
+}
+
+.faq-cta{
+margin-top:80px;
+background:#17325C;
+padding:60px 40px;
+border-radius:20px;
+text-align:center;
+color:#fff;
+}
+
+.faq-cta h3{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.faq-cta p{
+font-size:18px;
+width:70%;
+margin:auto;
+line-height:1.8;
+margin-bottom:35px;
+opacity:.95;
+}
+
+.apply-btn{
+background:#ff5b2e;
+color:#fff;
+padding:18px 50px;
+font-size:18px;
+font-weight:600;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.apply-btn:hover{
+background:#fff;
+color:#17325C;
+transform:translateY(-3px);
+}
+
+@media(max-width:991px){
+
+.faq-grid{
+grid-template-columns:1fr;
+}
+
+.faq-title{
+font-size:38px;
+}
+
+.faq-cta h3{
+font-size:30px;
+}
+
+.faq-cta p{
+width:100%;
+}
+
+}
+
+@media(max-width:600px){
+
+.faq-section{
+padding:60px 20px;
+}
+
+.faq-title{
+font-size:30px;
+}
+
+.faq-subtitle{
+font-size:16px;
+}
+
+.faq-question{
+padding:18px;
+}
+
+.faq-question h4{
+font-size:16px;
+}
+
+.faq-cta{
+padding:40px 20px;
+}
+
+.faq-cta h3{
+font-size:26px;
+}
+
+.apply-btn{
+width:100%;
+}
+
+}

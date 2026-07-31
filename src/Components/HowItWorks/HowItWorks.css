@@ -1,0 +1,176 @@
+.works{
+    padding:90px 0;
+    background:#fff;
+}
+
+.container{
+    width:90%;
+    max-width:1900px;
+    margin:auto;
+}
+
+.heading{
+    text-align:center;
+    max-width:1000px;
+    margin:0 auto;
+    position:relative;
+}
+.heading p {
+    width: 100%;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.small-title{
+    display:inline-flex;
+    align-items:center;
+    gap:19px;
+    color:#195099;
+    font-weight:600;
+    font-size:16px;
+    margin-bottom:15px;
+    
+}
+
+.small-title span{
+    width:35px;
+    height:3px;
+    background:#195099;
+}
+
+.heading h2{
+    font-size:42px;
+    color:#222;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.heading h2 span{
+    color:#195099;
+}
+
+
+.steps{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+   
+}
+
+/* dotted line */
+
+.steps::before{
+    content:"";
+    position:absolute;
+    top:70px;
+    left:15%;
+    width:70%;
+    border-top:2px dashed #d7dff1;
+    z-index:0;
+}
+
+.step-card{
+    text-align:center;
+    position:relative;
+    z-index:1;
+}
+
+.circle{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    background:#fff;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.step-card:hover .circle{
+    transform:translateY(-10px);
+    background:#195099;
+}
+
+.icon{
+    font-size:42px;
+    color:#e77203;
+    transition:.4s;
+}
+
+.step-card:hover .icon{
+    color:#fff;
+}
+
+.number{
+    position:absolute;
+    top:10px;
+    right:-10px;
+    width:42px;
+    height:42px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:700;
+    color:#195099;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.step-card h3{
+    margin-top:35px;
+    font-size:24px;
+    line-height:1.5;
+    color:#222;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.steps{
+grid-template-columns:1fr;
+gap:60px;
+}
+
+.steps::before{
+display:none;
+}
+
+.heading h2{
+font-size:34px;
+}
+
+.heading p{
+width:100%;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.circle{
+width:120px;
+height:120px;
+}
+
+.heading h2{
+font-size:28px;
+}
+
+.step-card h3{
+font-size:20px;
+}
+
+.heading p{
+font-size:15px;
+}
+
+}

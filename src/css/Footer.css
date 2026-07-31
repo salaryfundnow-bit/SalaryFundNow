@@ -1,0 +1,131 @@
+/* Main Footer Styling */
+.footer {
+  background-image: url('../assets/footer-bg.png'); /* Adjust path if needed */
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 300px;
+  padding-bottom: 60px;
+  margin-top: 130px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container Layout */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 0 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-left:10%;
+}
+
+/* Logo Section */
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Links Section */
+.footer-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-section ul li a:hover {
+  opacity: 0.75;
+}
+
+/* Social Icons */
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.4rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  opacity: 0.75;
+  color: #ffd166;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  position: relative;
+}
+
+/* Optional: For future search bar in footer */
+.footer #search input {
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+  height: 46px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+.footer #search input::placeholder {
+  color: #fff;
+}
+
+.footer #search button {
+  height: 46px;
+  border-radius: 23px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.footer #search button:hover {
+  background-color: #fff;
+  color: #4b8ef1;
+}
