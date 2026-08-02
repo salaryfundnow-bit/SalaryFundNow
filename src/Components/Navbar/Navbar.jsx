@@ -43,7 +43,7 @@ const Navbar = () => {
           
         </li>
         <li>
-          <Link to="/Apply" onClick={() => setMenuOpen(false)}>
+          <Link to="/LoanApply" onClick={() => setMenuOpen(false)}>
             
             <button className="btn">
             Apply Now

@@ -19,6 +19,7 @@ import Branch from './Pages/Branch'
 import Emi_Calculator from './Pages/Emi_Calculator'
 import ClientStories from './Components/Clientstories/Client-stories'
 import Services from './Components/services/services'
+import LoanApply from './Components/LoanApply/LoanApply'
 
 const App = () => {
   return (
@@ -46,7 +47,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
            <Route path="/client-stories" element={<ClientStories />} />
            <Route path="/services" element={<Services />} />
-           
+           <Route path="/loanapply" element={<LoanApply />} />
         </Routes>
       </main>
       <Footer />
