@@ -1,6 +1,5 @@
-import React from 'react';
-import Products from '../Components/Products/Products';
-import '../css/ProductMain.css';
+import React from 'react'
+import '../../css/ProductMain.css'
 
 const ProductMain = () => {
   return (

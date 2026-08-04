@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import '../css/Resources.css'
-import fin1920 from "../Pdf/Financial_19-20.pdf";
-import dlg2025 from "../Pdf/Financial_19-20.pdf";
-import dlg2026 from "../Pdf/Financial_19-20.pdf";
-import banner from "../assets/finance-banner.jpg";
+import '../../css/Resources.css'
+import fin1920 from "../../Pdf/Financial_19-20.pdf";
+import dlg2025 from "../../Pdf/Financial_19-20.pdf";
+import dlg2026 from "../../Pdf/Financial_19-20.pdf";
+import banner from "../../assets/finance-banner.jpg";
 
 const Resources = () => {
   const [activeSection, setActiveSection] = useState("financials");
