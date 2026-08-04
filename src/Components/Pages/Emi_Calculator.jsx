@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recharts";
-import "./../css/Emi_Calculator.css";
+import "../../css/emi_calculator.css";
 
 const Emi_Calculator = () => {
   const [loanAmount, setLoanAmount] = useState("");
