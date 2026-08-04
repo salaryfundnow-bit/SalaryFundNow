@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "../css/contact.css";
+import React, { useState } from "react"
+import "../../css/Contact.css"
 
 export default function Contact() {
 

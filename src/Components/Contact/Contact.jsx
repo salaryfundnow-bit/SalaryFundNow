@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./ContactUs.css";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import contactImage from "../../assets/ContactUs.png"; // replace with your image path
+import contactImage from "../../assets/Contactus.png"; // replace with your image path
 
 
 const ContactSection = () => {

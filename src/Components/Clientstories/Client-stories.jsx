@@ -3,7 +3,8 @@ import "./Client-stories.css";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 // center image
-import centerImage from "../../assets/lifeAt3.jpg";
+
+import centerImage from "../../assets/lifeat3.jpg";
 
 // client images
 import {

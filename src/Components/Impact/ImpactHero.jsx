@@ -1,5 +1,5 @@
 import React from 'react'
-import '../impact/ImpactHero.css'
+import '../Impact/ImpactHero.css'
 import ashishImg from '../../assets/ashish-n.jpg'
 import ashutoshImg from '../../assets/Ashutosh_Mishra.jpg'
 
