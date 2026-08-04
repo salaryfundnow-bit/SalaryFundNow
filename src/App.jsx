@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './Components/Navbar/Navbar'
 import About from '../src/Components/About/about'
 import './app.css'
@@ -23,36 +23,44 @@ import LoanApply from './Components/LoanApply/LoanApply'
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename="/SalaryFundNow">
+
       <Navbar />
-      <main>
+
+      <main className="main-content">
         <Routes>
-          <Route path="/" element={<Home />} />
+
+          <Route path="/" element={<Home/>} />
+
           <Route path="/Wash" element={<Wash />} />
           <Route path="/Monthly" element={<Monthly />} />
           <Route path="/Weekly" element={<Weekly />} />
+
           <Route path="/ProductMain" element={<ProductMain />} />
 
           <Route path="/Founder" element={<Founder />} />
           <Route path="/Leadership" element={<Leadership />} />
           <Route path="/Mission_and_Vision" element={<Mission_and_Vision />} />
-          
+
           <Route path="/Branch" element={<Branch />} />
           <Route path="/Emi_Calculator" element={<Emi_Calculator />} />
 
-          <Route path="/about" element={<About/>} />
-          
-          
+          <Route path="/about" element={<About />} />
+
           <Route path="/resources" element={<Resources />} />
           <Route path="/contact" element={<Contact />} />
-           <Route path="/client-stories" element={<ClientStories />} />
-           <Route path="/services" element={<Services />} />
-           <Route path="/loanapply" element={<LoanApply />} />
+
+          <Route path="/client-stories" element={<ClientStories />} />
+          <Route path="/services" element={<Services />} />
+
+          <Route path="/loanapply" element={<LoanApply />} />
+
         </Routes>
       </main>
+
       <Footer />
-    </Router>
+
+    </BrowserRouter>
   )
 }
-
 export default App

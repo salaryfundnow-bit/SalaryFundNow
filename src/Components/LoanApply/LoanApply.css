@@ -1,0 +1,97 @@
+.loan-apply-form {
+  max-width: 600px;
+  margin: 120px auto 50px; /* space below navbar */
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+  font-family: Arial, sans-serif;
+}
+
+.loan-apply-form {
+  margin-top: 100px;
+}
+
+
+.loan-apply-form div {
+   
+  margin-bottom: 20px;
+}
+
+.loan-apply-form label {
+      
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.loan-apply-form input {
+    
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.loan-apply-form input:focus {
+    
+  border-color: #f57c00;
+  box-shadow: 0 0 5px rgba(245,124,0,0.3);
+}
+
+.loan-apply-form input[type="file"] {
+    margin-top: 5%;
+  padding: 10px;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+.loan-apply-form button {
+
+  width: 100%;
+  padding: 14px;
+  background: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loan-apply-form button:hover {
+  background: #e56f00;
+  transform: translateY(-2px);
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+  .loan-apply-form {
+    width: 90%;
+    padding: 25px;
+    margin: 30px auto;
+  }
+
+  .loan-apply-form label {
+    font-size: 14px;
+  }
+
+  .loan-apply-form input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .loan-apply-form button {
+    font-size: 15px;
+  }
+
+}
